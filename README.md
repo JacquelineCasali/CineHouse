@@ -1,2 +1,2 @@
-# CineHouse
+# cinehouse
 Projeto CineHouse DH

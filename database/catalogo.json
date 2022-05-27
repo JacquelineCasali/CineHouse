@@ -1,0 +1,20 @@
+{
+   "data":[ 
+       {
+    "código":1,
+    "titulo":"O Retorno dos que não foram 1",
+    "duração": 1.30,
+    "atores" :["Henrique","Paula","José"],
+    "anoDeLancamento":20220231,
+    "emCartaz":true 
+   },
+{
+    "código":2,
+    "titulo":"O Retorno dos que não foram 2",
+    "duração": 2.30,
+    "atores" :["Ana","Roberto Carlos"],
+    "anoDeLancamento":20230331,
+    "emCartaz":false 
+   }
+]
+}
