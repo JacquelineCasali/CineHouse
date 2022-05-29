@@ -44,11 +44,27 @@
      
 // console.log(listarFilmesEmCartaz(catalogoObj.data))
 
-var listarFilmesEmCartaz=(filmes)=>
-  filmes.filter((filme)=>filme.emCartaz )
-   console.log(listarFilmesEmCartaz(catalogoObj.data))
+// var listarFilmesEmCartaz=(filmes)=>
+//   filmes.filter((filme)=>filme.emCartaz )
+//    console.log(listarFilmesEmCartaz(catalogoObj.data))
 
 // 3. alterarStatusEmCartaz - alterar
 // A função deve receber como parâmetro o número identiﬁcador do ﬁlme escolhido, buscar o ﬁlme com base no parâmetro recebido e alterar o status existente da propriedade emCartaz (se estava como true, alterar para false, e vice e versa
 
+function alterarStatusEmCartaz (id,filmes){ //id é uma convenção para chamar o codigo
+ var idxFilme= filmes.findIndex((filme)=>{// findIndex retorna a posição do elemento
+     if(filme.codigo===id) {
+         return true
+     }   
+     })
+ if(idxFilme>=0){
+     filmes[idxFilme].emCartaz=!filmes[idxFilme].emCartaz //! valor negado //e alterar o status
+     //existente da propriedade emCartaz (se estava como true, alterar para false, e vise versa
+ return true
+ } else {
+     return false
+ }   
+ }
+console.log(alterarStatusEmCartaz(1,catalogoObj.data))
+console.log(catalogoObj.data)
 
