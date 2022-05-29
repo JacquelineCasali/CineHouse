@@ -27,14 +27,28 @@
 // utilizando o loop for e retornar os ﬁlmes disponíveis em cartaz - as 
 // informações de maneira amigável ao usuário.
 
-function listarFilmesEmCartaz(filmes){
-  var filmesEmCartaz =filmes.filter((filme)=>{ //pecorrer o array filter verifica se determinada e verdadeira ou nao usando uma arron fuction
-      if(filme.emCartaz===true){
-          return true
-      } 
-  })  
-  return filmesEmCartaz
-}
-console.log(listarFilmesEmCartaz(catalogoObj.data))
+// function listarFilmesEmCartaz(filmes){
+//   var filmesEmCartaz =filmes.filter((filme)=>{ //pecorrer o array filter verifica se determinada e verdadeira ou nao usando uma arron fuction
+//       if(filme.emCartaz===true){
+//           return true
+//       } 
+//   })  
+//   return filmesEmCartaz
+// }
+// console.log(listarFilmesEmCartaz(catalogoObj.data))
+
+// refatorando o codigo
+// function listarFilmesEmCartaz(filmes){
+//   return filmes.filter((filme)=>filme.emCartaz )
+// }//pecorrer o array filter verifica se determinada e verdadeira ou nao usando uma arron fuction
+     
+// console.log(listarFilmesEmCartaz(catalogoObj.data))
+
+var listarFilmesEmCartaz=(filmes)=>
+  filmes.filter((filme)=>filme.emCartaz )
+   console.log(listarFilmesEmCartaz(catalogoObj.data))
+
+// 3. alterarStatusEmCartaz - alterar
+// A função deve receber como parâmetro o número identiﬁcador do ﬁlme escolhido, buscar o ﬁlme com base no parâmetro recebido e alterar o status existente da propriedade emCartaz (se estava como true, alterar para false, e vice e versa
 
 
